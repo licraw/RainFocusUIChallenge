@@ -14,6 +14,8 @@ declare namespace React {
   }
 
   const StrictMode: (props: StrictModeProps) => unknown;
+
+  function useState<T>(initialValue: T): [T, (value: T | ((currentValue: T) => T)) => void];
 }
 
 declare module 'react' {
