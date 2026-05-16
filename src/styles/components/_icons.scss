@@ -1,0 +1,94 @@
+@use "../abstracts/tokens" as *;
+
+.brand-mark {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: $color-primary-pink;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.brand-mark span {
+  position: absolute;
+}
+
+.brand-mark span:nth-child(1) {
+  left: 1px;
+  bottom: 5px;
+}
+
+.brand-mark span:nth-child(2) {
+  left: 15px;
+  bottom: 5px;
+}
+
+.brand-mark span:nth-child(3) {
+  right: 2px;
+  top: 3px;
+}
+
+.brand-mark img {
+  width: 32px;
+  height: 32px;
+}
+
+.org-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: $radius-sm;
+  object-fit: cover;
+}
+
+.event-logo {
+  display: block;
+  width: 95px;
+  height: 95px;
+  border-radius: $radius-md;
+  object-fit: cover;
+}
+
+.person-portal {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.person-portal img {
+  position: absolute;
+  display: block;
+}
+
+.person-portal img:nth-child(1) {
+  inset: -0.33% 23.87% 22.86% -0.01%;
+  width: 76.14%;
+  height: 77.47%;
+}
+
+.person-portal img:nth-child(2) {
+  inset: 37.89% 0 0 37.89%;
+  width: 62.11%;
+  height: 62.11%;
+}
+
+.person-portal img:nth-child(3) {
+  inset: 40.97% 23.85% 22.86% 37.88%;
+  width: 38.27%;
+  height: 36.17%;
+}
+
+.icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  color: $color-primary;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .event-logo {
+    width: 72px;
+    height: 72px;
+  }
+}
+

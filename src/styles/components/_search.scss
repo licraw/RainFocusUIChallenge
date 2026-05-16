@@ -1,0 +1,57 @@
+@use "../abstracts/tokens" as *;
+
+.search-field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 24px;
+  gap: $space-1;
+  padding: $space-1;
+  border-radius: $radius-sm;
+  background: $color-surface-muted;
+  color: $color-text-search;
+}
+
+.search-field:focus-within {
+  outline: 2px solid $color-focus-primary;
+  outline-offset: 1px;
+}
+
+.search-field input {
+  appearance: none;
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent !important;
+  box-shadow: none;
+  color: $color-text-search;
+  font-size: $font-size-search;
+  font-weight: 600;
+  line-height: 10px;
+  letter-spacing: 0;
+}
+
+.search-field input:-webkit-autofill,
+.search-field input:-webkit-autofill:hover,
+.search-field input:-webkit-autofill:focus {
+  box-shadow: 0 0 0 1000px $color-surface-muted inset;
+  -webkit-text-fill-color: $color-text-search;
+}
+
+.search-field input::placeholder {
+  color: $color-text-search;
+  opacity: 1;
+}
+
+.search-field input::-webkit-search-decoration,
+.search-field input::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.search-field .icon {
+  width: 16px;
+  height: 16px;
+  color: $color-text-search;
+}
+

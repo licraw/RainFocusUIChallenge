@@ -1,0 +1,9 @@
+@use "../abstracts/tokens" as *;
+
+body {
+  color: $color-text-body;
+  font-family: $font-family-base;
+  font-size: $font-size-admin;
+  letter-spacing: 0;
+}
+

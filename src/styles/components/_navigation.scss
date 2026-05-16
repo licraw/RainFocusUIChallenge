@@ -1,0 +1,84 @@
+@use "../abstracts/tokens" as *;
+
+.navigation-list {
+  width: 200px;
+}
+
+.navigation-list__group {
+  width: 100%;
+}
+
+.navigation-list__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  gap: $space-3;
+  padding: $space-2 $space-3;
+  border: 0;
+  border-radius: $radius-md;
+  background: $color-white;
+  color: $color-text-subtle;
+  font-size: $font-size-admin;
+  font-weight: 600;
+  line-height: 18.2px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.navigation-list__item:hover,
+.navigation-list__item:focus-visible {
+  background: $color-primary-soft;
+  outline: 0;
+}
+
+.navigation-list__item.is-active {
+  background: $color-primary-soft;
+  color: $color-primary;
+}
+
+.navigation-list__dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: $color-text-subtle;
+}
+
+.navigation-list__item.is-active .navigation-list__dot {
+  background: $color-primary;
+}
+
+.navigation-list__children {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: $space-1 $space-3 $space-3 $space-8;
+  list-style: none;
+}
+
+.navigation-list__children button {
+  display: block;
+  width: 100%;
+  padding: $space-2 0;
+  border: 0;
+  background: transparent;
+  color: $color-text-subtle;
+  font-size: $font-size-admin;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.navigation-list__children button:hover,
+.navigation-list__children button:focus-visible {
+  color: $color-primary;
+  outline: 0;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .navigation-list {
+    width: 100%;
+  }
+}
+

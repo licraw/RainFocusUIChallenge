@@ -1,0 +1,135 @@
+@use "../abstracts/tokens" as *;
+
+.content-area {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: calc($content-max-width + $space-8 * 2);
+  padding: $space-7 $space-8 38px;
+}
+
+.header-block {
+  display: flex;
+  align-items: flex-start;
+  gap: $space-4;
+  width: 100%;
+  max-width: $content-max-width;
+  margin: 0 0 $space-7;
+}
+
+.header-block__media {
+  flex: 0 0 95px;
+}
+
+.header-block__copy {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.header-block h1 {
+  margin: 0 0 $space-2;
+  color: $color-text-heading;
+  font-size: $font-size-h1;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.header-block p {
+  margin: 0;
+  color: $color-text-body;
+  font-size: $font-size-body;
+  font-weight: 400;
+  line-height: $line-height-body;
+  letter-spacing: 0;
+}
+
+.intro-section {
+  width: 100%;
+  max-width: $content-max-width;
+  margin-bottom: $space-6;
+}
+
+.intro-section h2 {
+  margin: 0 0 $space-4;
+  color: $color-text-heading;
+  font-size: $font-size-h2;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.intro-section p {
+  margin: 0;
+  color: $color-text-body;
+  font-size: $font-size-body;
+  font-weight: 400;
+  line-height: $line-height-body;
+  letter-spacing: 0;
+}
+
+.module-section {
+  width: 100%;
+  max-width: $content-max-width;
+  padding-top: $space-5;
+  border-top: 1px solid $color-border;
+}
+
+.module-section__header {
+  display: flex;
+  align-items: center;
+  gap: $space-5;
+  margin-bottom: $space-5;
+}
+
+.module-section__header h2 {
+  margin: 0;
+  color: $color-text-heading;
+  font-size: $font-size-h3;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .content-area {
+    max-width: none;
+    padding: $space-6 $space-5;
+  }
+
+  .header-block,
+  .intro-section,
+  .module-section {
+    max-width: none;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .content-area {
+    padding: $space-5 $space-4;
+  }
+
+  .header-block {
+    flex-wrap: wrap;
+  }
+
+  .header-block__media {
+    flex-basis: 72px;
+  }
+
+  .header-block h1 {
+    font-size: $font-size-mobile-h1;
+  }
+
+  .header-block__action {
+    width: 100%;
+  }
+
+  .intro-section h2 {
+    font-size: $font-size-mobile-h2;
+  }
+
+  .module-section__header {
+    gap: $space-4;
+  }
+}
+

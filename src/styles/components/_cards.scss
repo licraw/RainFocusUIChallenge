@@ -1,0 +1,143 @@
+@use "../abstracts/tokens" as *;
+
+.step-section {
+  margin-bottom: $space-5;
+}
+
+.step-section:last-child {
+  margin-bottom: 0;
+}
+
+.step-section__title {
+  margin: 0 0 $space-2;
+  color: $color-text-muted;
+  font-size: $font-size-admin;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.step-section__title strong {
+  color: $color-text-heading;
+  font-weight: 700;
+}
+
+.step-section__summary-row {
+  display: flex;
+  min-height: $height-action-row;
+  gap: $space-6;
+  padding: $space-4 $space-5;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  background: $color-white;
+}
+
+.summary-card {
+  flex: 0 1 $width-summary-card;
+  padding: $space-2;
+  border-radius: $radius-sm;
+  background: $color-white;
+}
+
+.summary-card h4,
+.action-card h4 {
+  margin: 0;
+  color: $color-text-heading;
+  font-family: $font-family-alt;
+  font-size: $font-size-small-header;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.summary-card p,
+.action-card p {
+  margin: $space-1 0 0;
+  color: $color-text-body;
+  font-size: $font-size-description;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.step-section__card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: $space-4 $space-5;
+}
+
+.action-card,
+.empty-action-card {
+  min-height: $height-action-row;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  background: $color-white;
+}
+
+.action-card {
+  padding: $space-5 $space-6;
+}
+
+.action-card__header {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  padding-bottom: $space-1;
+}
+
+.action-card p {
+  max-width: 267px;
+}
+
+.empty-action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $space-1;
+  padding: $space-5 $space-6;
+  color: $color-text-heading;
+  font-size: $font-size-description;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.empty-action-card:hover,
+.empty-action-card:focus-visible,
+.action-card:hover {
+  border-color: $color-primary;
+}
+
+.empty-action-card:focus-visible {
+  outline: 2px solid $color-focus-primary-card;
+  outline-offset: 2px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .step-section__card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .step-section__summary-row {
+    flex-direction: column;
+    gap: $space-2;
+    padding: $space-4;
+  }
+
+  .summary-card {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .step-section__card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-card,
+  .empty-action-card {
+    padding: $space-5;
+  }
+}
+

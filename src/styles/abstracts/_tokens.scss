@@ -1,16 +1,23 @@
 $color-white: #ffffff;
+$color-black: #000000;
 $color-text-heading: #222222;
 $color-text-body: #393551;
 $color-text-muted: #444444;
 $color-text-subtle: #767676;
+$color-text-search: #777777;
 $color-muted-user: #444444;
 $color-border: #cbc6de;
 $color-surface-muted: #f5f5f5;
 $color-primary: #5c00dc;
 $color-primary-hover: #4d00b8;
 $color-primary-soft: rgba(92, 0, 220, 0.08);
-$color-berry: #ed1a5d;
+$color-primary-pink: #ed1a5d;
+$color-berry: #e71356;
 $color-grape-3: #ab99ff;
+$color-focus-primary: rgba(92, 0, 220, 0.2);
+$color-focus-primary-strong: rgba(92, 0, 220, 0.22);
+$color-focus-primary-card: rgba(92, 0, 220, 0.24);
+$shadow-mobile-menu: 0 12px 24px rgba(34, 34, 34, 0.08);
 
 $font-family-base: Inter, "Open Sans", Arial, sans-serif;
 $font-family-alt: "Open Sans", Inter, Arial, sans-serif;
@@ -22,6 +29,10 @@ $font-size-admin: 14px;
 $font-size-small-header: 13px;
 $font-size-description: 12px;
 $font-size-search: 10px;
+$font-size-mobile-h1: 26px;
+$font-size-mobile-h2: 22px;
+
+$line-height-body: 24px;
 
 $space-1: 4px;
 $space-2: 8px;
@@ -35,9 +46,13 @@ $space-8: 48px;
 $radius-sm: 4px;
 $radius-md: 8px;
 
+$height-action-row: 120px;
+
+$width-summary-card: 221px;
 $sidebar-rail-width: 63px;
 $sidebar-panel-width: 215px;
 $content-max-width: 1073px;
 
 $breakpoint-tablet: 900px;
 $breakpoint-mobile: 560px;
+$breakpoint-min: 320px;

@@ -1,0 +1,14 @@
+@use "../abstracts/tokens" as *;
+
+.app-frame {
+  display: flex;
+  min-height: 100vh;
+  background: $color-white;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .app-frame {
+    flex-direction: column;
+  }
+}
+
