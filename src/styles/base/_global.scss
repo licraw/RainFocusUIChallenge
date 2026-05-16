@@ -1,11 +1,12 @@
 @use "../abstracts/tokens" as *;
 
 :root {
-  --rf-color-primary: #{$color-primary-raw};
-  --rf-color-primary-hover: #{$color-primary-hover-raw};
-  --rf-color-border: #{$color-border-raw};
-  --rf-color-border-muted: #{$color-border-muted-raw};
-  --rf-color-surface: #{$color-white-raw};
-  --rf-color-text: #{$color-text-heading-raw};
-  --rf-color-text-muted: #{$color-text-body-raw};
+  --rf-brand-color-primary: #5c00dc;
+  --rf-brand-color-primary-hover: #4d00b8;
+  --rf-brand-color-border: #cbc6de;
+  --rf-brand-color-border-muted: #e8e3f3;
+  --rf-brand-color-surface: #ffffff;
+  --rf-brand-color-text-body: #393551;
+  --rf-text-g1-header: #222222;
+  --rf-comp-button-primary-color-background: var(--rf-brand-color-primary);
 }

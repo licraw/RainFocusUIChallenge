@@ -17,10 +17,10 @@
   padding: $space-2 $space-3;
   border: 0;
   border-radius: $radius-md;
-  background: $color-white;
+  background: $color-surface;
   color: $color-text-subtle;
   font-size: $font-size-admin;
-  font-weight: 600;
+  font-weight: $font-weight-semibold;
   line-height: 18.2px;
   letter-spacing: 0;
   text-align: left;
@@ -64,7 +64,7 @@
   background: transparent;
   color: $color-text-subtle;
   font-size: $font-size-admin;
-  font-weight: 600;
+  font-weight: $font-weight-semibold;
   line-height: 14px;
   letter-spacing: 0;
   text-align: left;
@@ -81,4 +81,3 @@
     width: 100%;
   }
 }
-

@@ -1,25 +1,18 @@
-$color-white-raw: #ffffff;
+$color-surface: var(--rf-brand-color-surface, #ffffff);
+$color-primary: var(--rf-brand-color-primary, #5c00dc);
+$color-primary-hover: var(--rf-brand-color-primary-hover, #4d00b8);
+$color-button-primary: var(--rf-comp-button-primary-color-background, #5c00dc);
+$color-text-heading: var(--rf-text-g1-header, #222222);
+$color-text-body: var(--rf-brand-color-text-body, #393551);
+$color-border: var(--rf-brand-color-border, #cbc6de);
+$color-border-muted: var(--rf-brand-color-border-muted, #e8e3f3);
+
 $color-black: #000000;
-$color-text-heading-raw: #222222;
-$color-text-body-raw: #393551;
-$color-text-muted-raw: #444444;
+$color-text-muted: $color-text-body;
 $color-text-subtle: #767676;
 $color-text-search: #777777;
 $color-muted-user: #444444;
-$color-border-raw: #cbc6de;
-$color-border-muted-raw: #e8e3f3;
 $color-surface-muted: #f5f5f5;
-$color-primary-raw: #5c00dc;
-$color-primary-hover-raw: #4d00b8;
-
-$color-white: var(--rf-color-surface, #{$color-white-raw});
-$color-text-heading: var(--rf-color-text, #{$color-text-heading-raw});
-$color-text-body: var(--rf-color-text-muted, #{$color-text-body-raw});
-$color-text-muted: var(--rf-color-text-muted, #{$color-text-muted-raw});
-$color-border: var(--rf-color-border, #{$color-border-raw});
-$color-border-muted: var(--rf-color-border-muted, #{$color-border-muted-raw});
-$color-primary: var(--rf-color-primary, #{$color-primary-raw});
-$color-primary-hover: var(--rf-color-primary-hover, #{$color-primary-hover-raw});
 $color-primary-soft: rgba(92, 0, 220, 0.08);
 $color-primary-pink: #ed1a5d;
 $color-berry: #e71356;
@@ -41,6 +34,11 @@ $font-size-description: 12px;
 $font-size-search: 10px;
 $font-size-mobile-h1: 26px;
 $font-size-mobile-h2: 22px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
 
 $line-height-body: 24px;
 

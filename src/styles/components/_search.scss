@@ -27,7 +27,7 @@
   box-shadow: none;
   color: $color-text-search;
   font-size: $font-size-search;
-  font-weight: 600;
+  font-weight: $font-weight-medium;
   line-height: 10px;
   letter-spacing: 0;
 }
@@ -54,4 +54,3 @@
   height: 16px;
   color: $color-text-search;
 }
-

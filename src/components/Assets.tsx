@@ -1,4 +1,3 @@
-import eventLogoUrl from '../assets/event-logo.png';
 import orgIconUrl from '../assets/org-logo.png';
 import brandMarkUrl from '../assets/brand-mark.svg';
 import personA from '../assets/person-portal-a.svg';
@@ -14,7 +13,7 @@ export function BrandMark() {
 }
 
 export function EventLogo() {
-  return <img className="event-logo" src={eventLogoUrl} alt="" />;
+  return <img className="event-logo" src={orgIconUrl} alt="" />;
 }
 
 export function OrgLogo() {

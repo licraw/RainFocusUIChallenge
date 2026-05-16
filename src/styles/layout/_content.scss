@@ -30,7 +30,7 @@
   color: $color-text-heading;
   font-size: $font-size-h1;
   font-weight: 300;
-  line-height: 1;
+  line-height: normal;
   letter-spacing: 0;
 }
 
@@ -38,7 +38,7 @@
   margin: 0;
   color: $color-text-body;
   font-size: $font-size-body;
-  font-weight: 400;
+  font-weight: $font-weight-regular;
   line-height: $line-height-body;
   letter-spacing: 0;
 }
@@ -46,15 +46,15 @@
 .intro-section {
   width: 100%;
   max-width: $content-max-width;
-  margin-bottom: $space-6;
+  margin-bottom: $space-7;
 }
 
 .intro-section h2 {
   margin: 0 0 $space-4;
   color: $color-text-heading;
   font-size: $font-size-h2;
-  font-weight: 600;
-  line-height: 1;
+  font-weight: $font-weight-semibold;
+  line-height: normal;
   letter-spacing: 0;
 }
 
@@ -62,7 +62,7 @@
   margin: 0;
   color: $color-text-body;
   font-size: $font-size-body;
-  font-weight: 400;
+  font-weight: $font-weight-regular;
   line-height: $line-height-body;
   letter-spacing: 0;
 }
@@ -70,7 +70,7 @@
 .module-section {
   width: 100%;
   max-width: $content-max-width;
-  padding-top: $space-5;
+  padding-top: 23px;
   border-top: 1px solid $color-border;
 }
 
@@ -85,8 +85,8 @@
   margin: 0;
   color: $color-text-heading;
   font-size: $font-size-h3;
-  font-weight: 600;
-  line-height: 1;
+  font-weight: $font-weight-semibold;
+  line-height: normal;
   letter-spacing: 0;
 }
 
@@ -132,4 +132,3 @@
     gap: $space-4;
   }
 }
-

@@ -39,6 +39,6 @@ npm run preview
 
 - Components are organized by UI responsibility: app frame, sidebar, navigation, content sections, cards, buttons, search, and asset wrappers.
 - SCSS tokens live in `src/styles/abstracts/_tokens.scss`; base rules, layout shells, and component styles are split into focused partials and imported from `main.scss`.
-- Core brand colors are exposed as CSS custom properties in `src/styles/base/_global.scss`, allowing runtime white-label theming without recompiling Sass.
+- Core Figma design tokens are translated into CSS custom properties in `src/styles/base/_global.scss` using RainFocus-style names like `--rf-brand-color-primary`, `--rf-brand-color-surface`, `--rf-brand-color-border`, and `--rf-comp-button-primary-color-background`. Sass aliases in `_tokens.scss` consume those variables so component styles stay readable while still supporting runtime white-label overrides without recompiling Sass.
 - Mobile navigation collapses into a sticky toggle so users can reach page content quickly on small screens.
 - Figma-exported assets are stored locally in `src/assets` so the UI does not depend on expiring MCP asset URLs.

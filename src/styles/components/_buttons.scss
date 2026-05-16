@@ -4,15 +4,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 101px;
   min-height: 33px;
   padding: $space-2 $space-4;
   border: 0;
   border-radius: $radius-sm;
-  background: $color-primary;
-  color: $color-white;
+  background: $color-button-primary;
+  color: $color-surface;
   font-size: $font-size-admin;
-  font-weight: 700;
-  line-height: 1;
+  font-weight: $font-weight-bold;
+  line-height: normal;
   letter-spacing: 0;
   white-space: nowrap;
 }
@@ -23,4 +24,3 @@
   outline: 2px solid $color-focus-primary-strong;
   outline-offset: 2px;
 }
-
