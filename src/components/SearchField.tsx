@@ -6,9 +6,9 @@ type SearchFieldProps = {
 
 export function SearchField({ placeholder = 'Search' }: SearchFieldProps) {
   return (
-    <label className="search-field">
+    <div className="search-field">
       <Icon name="search" />
-      <span className="search-field__text">{placeholder}</span>
-    </label>
+      <input aria-label="Search event navigation" placeholder={placeholder} type="search" />
+    </div>
   );
 }

@@ -115,6 +115,11 @@ button {
   object-fit: cover;
 }
 
+.brand-mark img {
+  width: 32px;
+  height: 32px;
+}
+
 .sidebar-rail__user {
   display: grid;
   place-items: center;
@@ -145,9 +150,10 @@ button {
 .sidebar__header h2 {
   margin: 0;
   color: $color-text-heading;
-  font-size: 14px;
+  font-size: $font-size-admin;
   font-weight: 600;
   line-height: 18.2px;
+  letter-spacing: 0;
 }
 
 .sidebar__details {
@@ -156,9 +162,10 @@ button {
   margin: 0;
   padding: 0 $space-2 $space-3;
   color: #000000;
-  font-size: 10px;
+  font-size: $font-size-search;
   font-weight: 500;
   line-height: 18.2px;
+  letter-spacing: 0;
 }
 
 .sidebar__details span + span {
@@ -192,17 +199,46 @@ button {
   color: #777777;
 }
 
-.search-field__text {
-  font-size: 10px;
+.search-field:focus-within {
+  outline: 2px solid rgba($color-primary, 0.2);
+  outline-offset: 1px;
+}
+
+.search-field input {
+  appearance: none;
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent !important;
+  box-shadow: none;
+  color: #777777;
+  font-size: $font-size-search;
   font-weight: 600;
   line-height: 10px;
+  letter-spacing: 0;
+}
+
+.search-field input:-webkit-autofill,
+.search-field input:-webkit-autofill:hover,
+.search-field input:-webkit-autofill:focus {
+  box-shadow: 0 0 0 1000px $color-surface-muted inset;
+  -webkit-text-fill-color: #777777;
+}
+
+.search-field input::placeholder {
+  color: #777777;
+  opacity: 1;
+}
+
+.search-field input::-webkit-search-decoration,
+.search-field input::-webkit-search-cancel-button {
+  appearance: none;
 }
 
 .icon {
   display: inline-block;
   flex: 0 0 auto;
-  width: 24px;
-  height: 24px;
   color: $color-primary;
 }
 
@@ -210,107 +246,6 @@ button {
   width: 16px;
   height: 16px;
   color: #777777;
-}
-
-.icon--search {
-  position: relative;
-}
-
-.icon--search::before {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 7px;
-  height: 7px;
-  border: 1.7px solid currentColor;
-  border-radius: 50%;
-  content: "";
-}
-
-.icon--search::after {
-  position: absolute;
-  right: 3px;
-  bottom: 3px;
-  width: 6px;
-  height: 1.7px;
-  border-radius: 1px;
-  background: currentColor;
-  transform: rotate(45deg);
-  transform-origin: center;
-  content: "";
-}
-
-.icon--workflow {
-  position: relative;
-}
-
-.icon--workflow::before {
-  position: absolute;
-  left: 7px;
-  top: 4px;
-  width: 2px;
-  height: 12px;
-  background: currentColor;
-  content: "";
-}
-
-.icon--workflow::after {
-  position: absolute;
-  left: 7px;
-  top: 14px;
-  width: 9px;
-  height: 9px;
-  border-right: 2px solid currentColor;
-  border-top: 2px solid currentColor;
-  transform: rotate(45deg);
-  transform-origin: top right;
-  content: "";
-}
-
-.icon--plus {
-  position: relative;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-}
-
-.icon--plus::before,
-.icon--plus::after {
-  position: absolute;
-  inset: 0;
-  width: 10px;
-  height: 2px;
-  margin: auto;
-  border-radius: 2px;
-  background: currentColor;
-  content: "";
-}
-
-.icon--plus::after {
-  transform: rotate(90deg);
-}
-
-.icon--portal {
-  position: relative;
-}
-
-.icon--portal::before {
-  position: absolute;
-  top: 5px;
-  left: 2px;
-  width: 18px;
-  height: 12px;
-  border: 2px solid currentColor;
-  content: "";
-}
-
-.icon--portal::after {
-  position: absolute;
-  right: 3px;
-  bottom: 3px;
-  left: 7px;
-  height: 2px;
-  background: currentColor;
-  content: "";
 }
 
 .navigation-list {
@@ -332,9 +267,10 @@ button {
   border-radius: $radius-md;
   background: $color-white;
   color: $color-text-subtle;
-  font-size: 14px;
+  font-size: $font-size-admin;
   font-weight: 600;
   line-height: 18.2px;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -375,9 +311,10 @@ button {
   border: 0;
   background: transparent;
   color: $color-text-subtle;
-  font-size: 14px;
+  font-size: $font-size-admin;
   font-weight: 600;
   line-height: 14px;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -423,17 +360,19 @@ button {
 .header-block h1 {
   margin: 0 0 $space-2;
   color: $color-text-heading;
-  font-size: 32px;
+  font-size: $font-size-h1;
   font-weight: 300;
   line-height: 1;
+  letter-spacing: 0;
 }
 
 .header-block p {
   margin: 0;
   color: $color-text-body;
-  font-size: 16px;
+  font-size: $font-size-body;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0;
 }
 
 .button {
@@ -446,9 +385,10 @@ button {
   border-radius: $radius-sm;
   background: $color-primary;
   color: $color-white;
-  font-size: 14px;
+  font-size: $font-size-admin;
   font-weight: 700;
   line-height: 1;
+  letter-spacing: 0;
   white-space: nowrap;
 }
 
@@ -468,16 +408,19 @@ button {
 .intro-section h2 {
   margin: 0 0 $space-4;
   color: $color-text-heading;
-  font-size: 24px;
+  font-size: $font-size-h2;
   font-weight: 600;
   line-height: 1;
+  letter-spacing: 0;
 }
 
 .intro-section p {
   margin: 0;
   color: $color-text-body;
-  font-size: 16px;
+  font-size: $font-size-body;
+  font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0;
 }
 
 .module-section {
@@ -497,9 +440,10 @@ button {
 .module-section__header h2 {
   margin: 0;
   color: $color-text-heading;
-  font-size: 20px;
+  font-size: $font-size-h3;
   font-weight: 600;
   line-height: 1;
+  letter-spacing: 0;
 }
 
 .person-portal {
@@ -543,9 +487,10 @@ button {
 .step-section__title {
   margin: 0 0 $space-2;
   color: $color-text-muted;
-  font-size: 14px;
+  font-size: $font-size-admin;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .step-section__title strong {
@@ -574,18 +519,21 @@ button {
 .action-card h4 {
   margin: 0;
   color: $color-text-heading;
-  font-size: 13px;
+  font-family: $font-family-alt;
+  font-size: $font-size-small-header;
   font-weight: 700;
   line-height: 1;
+  letter-spacing: 0;
 }
 
 .summary-card p,
 .action-card p {
   margin: $space-1 0 0;
   color: $color-text-body;
-  font-size: 12px;
+  font-size: $font-size-description;
   font-weight: 400;
-  line-height: 1.08;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .step-section__card-grid {
@@ -610,7 +558,7 @@ button {
   display: flex;
   align-items: center;
   gap: $space-2;
-  margin-bottom: $space-1;
+  padding-bottom: $space-1;
 }
 
 .action-card p {
@@ -625,8 +573,9 @@ button {
   gap: $space-1;
   padding: $space-5 $space-6;
   color: $color-text-heading;
-  font-size: 12px;
+  font-size: $font-size-description;
   line-height: 1;
+  letter-spacing: 0;
 }
 
 .empty-action-card:hover,
@@ -660,7 +609,7 @@ button {
     flex: 0 0 auto;
     flex-direction: row;
     min-height: 56px;
-    padding: $space-2 $space-3;
+    padding: $space-2 $space-5;
     border-right: 0;
     border-bottom: 1px solid $color-border;
     border-left: 0;
@@ -721,9 +670,10 @@ button {
 
   .sidebar__toggle strong {
     overflow: hidden;
-    font-size: 14px;
+    font-size: $font-size-admin;
     font-weight: 700;
     line-height: 18px;
+    letter-spacing: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -733,6 +683,7 @@ button {
     font-size: 11px;
     font-weight: 500;
     line-height: 14px;
+    letter-spacing: 0;
   }
 
   .sidebar__toggle-icon {
@@ -745,7 +696,8 @@ button {
   }
 
   .sidebar__toggle-icon::before,
-  .sidebar__toggle-icon::after {
+  .sidebar__toggle-icon::after,
+  .sidebar__toggle-icon span {
     position: absolute;
     left: 6px;
     width: 10px;
@@ -755,12 +707,16 @@ button {
     content: "";
   }
 
+  .sidebar__toggle-icon span {
+    top: 10px;
+  }
+
   .sidebar__toggle-icon::before {
-    top: 8px;
+    top: 7px;
   }
 
   .sidebar__toggle-icon::after {
-    top: 12px;
+    top: 13px;
   }
 
   .sidebar__toggle[aria-expanded="true"] .sidebar__toggle-icon::before {
@@ -771,6 +727,10 @@ button {
   .sidebar__toggle[aria-expanded="true"] .sidebar__toggle-icon::after {
     top: 10px;
     transform: rotate(-45deg);
+  }
+
+  .sidebar__toggle[aria-expanded="true"] .sidebar__toggle-icon span {
+    opacity: 0;
   }
 
   .navigation-list {
@@ -794,6 +754,12 @@ button {
 }
 
 @media (max-width: $breakpoint-mobile) {
+  .sidebar-rail,
+  .sidebar__toggle {
+    padding-right: $space-4;
+    padding-left: $space-4;
+  }
+
   .content-area {
     padding: $space-5 $space-4;
   }

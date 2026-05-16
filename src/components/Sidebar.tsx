@@ -23,7 +23,9 @@ export function Sidebar() {
             {eventSummary.sidebarLocation} - {eventSummary.date}
           </small>
         </span>
-        <span className="sidebar__toggle-icon" aria-hidden="true" />
+        <span className="sidebar__toggle-icon" aria-hidden="true">
+          <span />
+        </span>
       </button>
       <aside
         className={`sidebar__panel${isOpen ? ' is-open' : ''}`}
