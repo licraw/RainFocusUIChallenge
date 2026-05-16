@@ -9,8 +9,12 @@ export function NavigationList({ items }: NavigationListProps) {
     <nav className="navigation-list" aria-label="Event sections">
       {items.map((item) => (
         <div className="navigation-list__group" key={item.label}>
-          <button className={`navigation-list__item${item.active ? ' is-active' : ''}`} type="button">
-            <span className="navigation-list__dot" />
+          <button
+            className={`navigation-list__item${item.active ? ' is-active' : ''}`}
+            type="button"
+            aria-current={item.active ? 'page' : undefined}
+          >
+            <span className="navigation-list__dot" aria-hidden="true" />
             <span>{item.label}</span>
           </button>
           {item.children ? (

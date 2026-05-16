@@ -1,2 +1,11 @@
 @use "../abstracts/tokens" as *;
 
+:root {
+  --rf-color-primary: #{$color-primary-raw};
+  --rf-color-primary-hover: #{$color-primary-hover-raw};
+  --rf-color-border: #{$color-border-raw};
+  --rf-color-border-muted: #{$color-border-muted-raw};
+  --rf-color-surface: #{$color-white-raw};
+  --rf-color-text: #{$color-text-heading-raw};
+  --rf-color-text-muted: #{$color-text-body-raw};
+}
