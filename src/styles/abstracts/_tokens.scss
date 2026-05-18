@@ -1,25 +1,27 @@
+// CSS custom properties are reserved for brand/runtime theming.
 $color-surface: var(--rf-brand-color-surface, #ffffff);
 $color-primary: var(--rf-brand-color-primary, #5c00dc);
 $color-primary-hover: var(--rf-brand-color-primary-hover, #4d00b8);
+$color-primary-soft: var(--rf-brand-color-primary-soft, rgba(92, 0, 220, 0.08));
+$color-focus-primary: var(--rf-brand-color-focus, rgba(92, 0, 220, 0.2));
+$color-focus-primary-strong: var(--rf-brand-color-focus-strong, rgba(92, 0, 220, 0.22));
+$color-focus-primary-card: var(--rf-brand-color-focus-card, rgba(92, 0, 220, 0.24));
+$color-primary-pink: var(--rf-brand-color-accent-pink, #ed1a5d);
 $color-button-primary: var(--rf-comp-button-primary-color-background, #5c00dc);
 $color-text-heading: var(--rf-text-g1-header, #222222);
 $color-text-body: var(--rf-brand-color-text-body, #393551);
 $color-border: var(--rf-brand-color-border, #cbc6de);
 $color-border-muted: var(--rf-brand-color-border-muted, #e8e3f3);
 
+// Sass-only tokens are stable product structure and implementation values.
 $color-black: #000000;
 $color-text-muted: $color-text-body;
 $color-text-subtle: #767676;
 $color-text-search: #777777;
 $color-muted-user: #444444;
 $color-surface-muted: #f5f5f5;
-$color-primary-soft: rgba(92, 0, 220, 0.08);
-$color-primary-pink: #ed1a5d;
 $color-berry: #e71356;
 $color-grape-3: #ab99ff;
-$color-focus-primary: rgba(92, 0, 220, 0.2);
-$color-focus-primary-strong: rgba(92, 0, 220, 0.22);
-$color-focus-primary-card: rgba(92, 0, 220, 0.24);
 $shadow-mobile-menu: 0 12px 24px rgba(34, 34, 34, 0.08);
 
 $font-family-base: Inter, "Open Sans", Arial, sans-serif;
