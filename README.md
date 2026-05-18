@@ -8,6 +8,8 @@ A static React, TypeScript, and SCSS implementation of the provided RainFocus Fi
 npm install
 ```
 
+This restores `node_modules`, which is intentionally not included in the submitted zip.
+
 ## Development
 
 ```bash
@@ -22,13 +24,13 @@ Vite will print a local URL, usually `http://localhost:5173/`.
 npm run build
 ```
 
+The production build writes a single `build/index.html` file. CSS, JavaScript, and local image assets are inlined so the file can be opened directly in a browser.
+
 ## Preview
 
 ```bash
 npm run preview
 ```
-
-After building, the generated `/dist/index.html` file can also be opened directly in a browser.
 
 ## Implementation Notes
 
