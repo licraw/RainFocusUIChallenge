@@ -26,7 +26,7 @@ npm run build
 npm run preview
 ```
 
-A standalone production build is also included in `/dist`. Open `dist/index.html` directly in a browser to view the project without installing dependencies.
+A standalone production build is also included in `/build`. Open `build/index.html` directly in a browser to view the project without installing dependencies.
 
 ## Notes
 
