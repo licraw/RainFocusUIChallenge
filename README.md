@@ -1,43 +1,37 @@
 # RainFocus UI Challenge
 
-A static React, TypeScript, and SCSS implementation of the provided RainFocus Figma design.
+React + TypeScript + SCSS implementation of the provided Figma design.
 
-## Setup
+## Install
 
 ```bash
 npm install
 ```
 
-This restores `node_modules`, which is intentionally not included in the submitted zip.
-
-## Development
+## Run Locally
 
 ```bash
 npm run dev
 ```
 
-Vite will print a local URL, usually `http://localhost:5173/`.
-
-## Build
+## Production Build
 
 ```bash
 npm run build
 ```
 
-The production build writes a single `build/index.html` file. CSS, JavaScript, and local image assets are inlined so the file can be opened directly in a browser.
-
-## Preview
+## Preview Build
 
 ```bash
 npm run preview
 ```
 
-## Implementation Notes
+A standalone production build is also included in `/dist`. Open `dist/index.html` directly in a browser to view the project without installing dependencies.
 
-- Styles are written in SCSS and imported through `src/styles/main.scss`.
-- SCSS is split into `abstracts`, `base`, `layout`, and `components` folders.
-- The UI is built from reusable React components for the frame, sidebar, navigation, header, sections, cards, buttons, search, and assets.
-- Page content comes from local mock data in `src/data/mockData.ts`.
-- Images and SVGs used by the page live in `src/assets`.
-- Theme-facing colors are exposed as CSS variables and consumed through Sass tokens.
-- On smaller screens, the sidebar navigation collapses behind a sticky mobile toggle.
+## Notes
+
+- Styling is organized with SCSS partials for tokens, layout, and component styles.
+- Components are split into reusable layout, navigation, card, and UI pieces.
+- The app uses local mock data and locally stored assets.
+- Core colors and layout values are tokenized to support lightweight theming.
+- The layout is responsive and collapses the sidebar navigation on smaller screens.
