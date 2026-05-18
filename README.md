@@ -30,7 +30,7 @@ A standalone production build is also included in `/build`. Open `build/index.ht
 
 ## Notes
 
-- Styling is organized with SCSS partials for tokens, layout, and component styles.
+- Styles are organized into shared, layout, and component-level SCSS files.
 - Components are split into reusable layout, navigation, card, and UI pieces.
 - The app uses local mock data and locally stored assets.
 - Core colors and layout values are tokenized to support lightweight theming.
