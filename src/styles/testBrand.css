@@ -1,0 +1,9 @@
+:root {
+  --rf-brand-color-primary: #0077cc;
+  --rf-brand-color-primary-hover: #005fa3;
+  --rf-brand-color-primary-soft: rgba(0, 119, 204, 0.08);
+  --rf-brand-color-focus: #0077cc33;
+  --rf-brand-color-focus-strong: rgba(0, 119, 204, 0.22);
+  --rf-brand-color-focus-card: rgba(0, 119, 204, 0.24);
+  --rf-comp-button-primary-color-background: var(--rf-brand-color-primary);
+}

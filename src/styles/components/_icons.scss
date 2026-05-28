@@ -1,33 +1,9 @@
 @use "../abstracts/tokens" as *;
 
 .brand-mark {
-  position: relative;
   flex: 0 0 32px;
   width: 32px;
   height: 32px;
-  color: $color-primary-pink;
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.brand-mark span {
-  position: absolute;
-}
-
-.brand-mark span:nth-child(1) {
-  left: 1px;
-  bottom: 5px;
-}
-
-.brand-mark span:nth-child(2) {
-  left: 15px;
-  bottom: 5px;
-}
-
-.brand-mark span:nth-child(3) {
-  right: 2px;
-  top: 3px;
 }
 
 .brand-mark img {
