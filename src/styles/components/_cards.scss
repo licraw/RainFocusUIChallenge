@@ -4,7 +4,12 @@
   margin-bottom: $space-5;
 }
 
-.step-section:last-child {
+.module-section > .step-section:last-child {
+  order: -1;
+  margin-bottom: $space-5;
+}
+
+.module-section > .step-section:nth-last-child(2) {
   margin-bottom: 0;
 }
 

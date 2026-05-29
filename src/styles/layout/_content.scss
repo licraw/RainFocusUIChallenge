@@ -68,6 +68,8 @@
 }
 
 .module-section {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: $content-max-width;
   padding-top: 23px;
